@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Petrochina_station_seemessageActivity" >
+
+    <include layout="@layout/activity_my" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/commonality_interface"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/textview_petrochina_seesuppliers_message_suppliersmessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/baise"
+                android:gravity="center"
+                android:text="供应商信息"
+                android:textColor="@color/hongse" />
+
+            <TextView
+                android:id="@+id/textview_petrochina_seesuppliers_message_servicemonads"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/baise"
+                android:gravity="center"
+                android:text="服务记录"
+                android:textColor="@color/zitiyanse3" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/commonality_interface" >
+
+            <WebView
+                android:id="@+id/webview_petrochina_seesuppliers_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_petrochina_seesuppliers_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/commonality_interface"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ListView
+                    android:id="@+id/listview_petrochina_seesuppliers_message_stationmonads"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/commonality_interface" >
+                </ListView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

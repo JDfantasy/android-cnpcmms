@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baise"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/textView_item_commonality_notice_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baise"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="最后一周的公告"
+        android:textColor="@color/zitiyanse5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <FrameLayout
+            android:id="@+id/framelayout1"
+            android:layout_width="match_parent"
+            android:layout_margin="2dp"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:src="@drawable/notice_copy" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <TextView
+                            android:id="@+id/textview_item_commonality_notice_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="维修人员集体会议" />
+
+                        <TextView
+                            android:id="@+id/textview_item_commonality_notice_shoudao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:visibility="gone"
+                            android:background="@drawable/item_maintain_selector_button"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="收到"
+                            android:textColor="@drawable/item_maintain_selector_buttontextcolor"
+                             />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_item_commonality_notice_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingBottom="3dp"
+                        android:paddingTop="3dp"
+                        android:text="2016年1月22日下午14:00维修员集体会议！B2会议室"
+                        android:textColor="@color/zitiyanse3"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textview_item_commonality_notice_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="10dp"
+                        android:text="2016.1.12 12:00"
+                        android:textColor="@color/zitiyanse3"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:visibility="gone"
+                android:id="@+id/linearlayout_item_commonality_notice_select"
+                >
+
+                <ImageView
+                    android:id="@+id/imageview_item_commonality_notice_imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:src="@drawable/alreadread" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

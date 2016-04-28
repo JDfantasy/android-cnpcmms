@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonality_interface"
+    android:orientation="vertical" >
+
+    <!-- 站长端保修项目的gridview的行布局 -->
+
+    <TextView
+        android:id="@+id/textView_item_repais_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@drawable/item_maintain_selector_buttontextcolor"
+        android:background="@drawable/item_maintain_selector_button"
+        android:text="TextView" />
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/btn_popup_picture"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/baise"
+                android:text="系统将默认发送给加油站站长端"
+                android:gravity="center"
+                android:textColor="#282828"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#0000" />
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/baise"
+                >
+                <Button
+                android:id="@+id/maintainhome_serviceAddlist_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:text="确 认"
+                android:textColor="@color/heise"
+                android:textSize="18sp" />
+                
+            </LinearLayout>
+            
+            
+           <!--  <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:background="@color/baise"
+                android:layout_weight="1"
+                >
+                <Button
+                android:id="@+id/maintainhome_serviceAddlist_change"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/baise"
+                android:text="更 改"
+                android:textColor="#282828"
+                android:visibility="gone"
+                android:textSize="18sp" />
+            	<TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2" />
+            	<Button
+                android:id="@+id/maintainhome_serviceAddlist_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/baise"
+                android:text="确 认"
+                android:textColor="#282828"
+                android:textSize="18sp" />
+            </LinearLayout> -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

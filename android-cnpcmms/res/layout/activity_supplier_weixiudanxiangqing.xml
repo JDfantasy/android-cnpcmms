@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".Supplier_weixiudanxiangqingActivity" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/activity_my" />
+
+    <WebView
+        android:id="@+id/wei_xiu_dan_xiang_qing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title" />
+
+</RelativeLayout>

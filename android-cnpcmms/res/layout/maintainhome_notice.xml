@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/commonality_interface"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/commonality_interface"
+        android:padding="10dp"
+         >
+
+        <TextView
+            android:id="@+id/textView_maintainhome_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/ediziti12sp"
+            android:text="今天开会" />
+
+        <TextView
+            android:id="@+id/textView_maintainhome_notice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:text="2016-01-20-12:35"
+            android:textSize="@dimen/ediziti12sp"
+            android:textColor="@color/zitiyanse3" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_maintainhome_notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/commonality_interface"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/ediziti12sp"
+        android:text="中国石油关于加强加油站安全措施实施计划等级考试才能就卡死的菜就肯定是你" />
+
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView_maintainhome_notice_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+</LinearLayout>

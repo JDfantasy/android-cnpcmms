@@ -1,0 +1,310 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity" >
+
+    <include layout="@layout/activity_my" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/baise"
+        android:orientation="vertical" >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- 工号的部分 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/huise_biankuang"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/textview_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="工       号：" />
+
+            <EditText
+                android:id="@+id/edittext_perfect_gonghao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/baise"
+                android:hint="点击输入工号"
+                android:inputType="number"
+                android:textSize="@dimen/ediziti12sp" />
+        </LinearLayout>
+        <!-- 工号的部分 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hangjianjv" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/huise_biankuang"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="@dimen/textview_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="用户类型：" />
+
+            <TextView
+                android:id="@+id/textview_perfect_zhanzhang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="站长"
+                android:textColor="@color/zitiyanse3"
+                android:textSize="@dimen/ediziti12sp" />
+
+            <TextView
+                android:id="@+id/textview_perfect_weixiuyuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="维修员"
+                android:textColor="@color/zitiyanse3"
+                android:textSize="@dimen/ediziti12sp" />
+
+            <TextView
+                android:id="@+id/textview_perfect_yunyingshan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="运营商"
+                android:textColor="@color/zitiyanse3"
+                android:textSize="@dimen/ediziti12sp" />
+
+            <TextView
+                android:id="@+id/textview_perfect_zhongshiyou"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="中石油"
+                android:textColor="@color/zitiyanse3"
+                android:textSize="@dimen/ediziti12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <!-- 工号的部分 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hangjianjv" />
+        <!-- 姓名、身份证、所属公司、在职岗位、联系电话的部分 -->
+
+
+        <!-- 姓名 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/huise_biankuang"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/textview_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="姓       名：" />
+
+            <EditText
+                android:id="@+id/edittext_perfect_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/baise"
+                android:hint="点击输入姓名"
+                android:textSize="@dimen/ediziti12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hangjianjv" />
+        <!-- 身份证 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/huise_biankuang"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/textview_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="身 份 证：" />
+
+            <EditText
+                android:id="@+id/edittext_perfect_shenfenzheng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/baise"
+                android:hint="请输入身份证"
+                android:inputType="textUri"
+                android:textSize="@dimen/ediziti12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hangjianjv" />
+        <!-- 在职岗位 -->
+        <!-- 联系电话 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/huise_biankuang"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/textview_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="联 系 人：" />
+
+            <EditText
+                android:id="@+id/edittext_perfect_lianxidianhua"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/baise"
+                android:hint="请输入你的电话号码"
+                android:inputType="number"
+                android:textSize="@dimen/ediziti12sp" />
+        </LinearLayout>
+
+        <!-- 姓名、身份证、所属公司、在职岗位、联系电话的部分 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hangjianjv" />
+        <!-- 密码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/huise_biankuang"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp" >
+
+            <TextView
+                android:layout_width="@dimen/textview_w"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="密      码 :  " />
+
+            <EditText
+                android:id="@+id/edittext_perfect_pwd1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/baise"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textSize="@dimen/ediziti12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hangjianjv" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/textView_perfect_xieyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_perfect_xuanzhongxieyi"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="中国石油协议"
+                    android:textColor="@color/hongse"
+                    android:textSize="@dimen/ediziti12sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_perfect_xuanzhongxieyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView_perfect_xieyi"
+                    android:layout_alignBottom="@+id/textView_perfect_xieyi"
+                    android:layout_alignParentLeft="true"
+                    android:button="@drawable/checked_select"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="我已阅读并同意"
+                    android:textColor="@color/zitiyanse3"
+                    android:textSize="@dimen/ediziti12sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_perfect_tijiaozhuce"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/item_maintain_selector_button"
+                android:text="完成"
+                android:textColor="@drawable/item_maintain_selector_buttontextcolor" />
+        </RelativeLayout>
+    </LinearLayout>
+        
+    </LinearLayout>
+
+    
+</LinearLayout>

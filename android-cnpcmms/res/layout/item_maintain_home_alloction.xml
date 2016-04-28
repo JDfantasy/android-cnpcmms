@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <FrameLayout
+        android:id="@+id/item_maintain_home_alloction_titleFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/item_maintainhome_alloction_titledateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="最近一周维修单"
+            android:textColor="@color/heise" />
+    </FrameLayout>
+
+    <!-- 下部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/baise_shape"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <!-- 左侧 -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/item_yuan" />
+
+        <LinearLayout
+            android:id="@+id/item_maintainhome_alloction_footerLinearlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/baise"
+            android:orientation="vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                 >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="站长"
+                    android:textColor="@color/heise" />
+
+                <TextView
+                    android:id="@+id/textView_item_maintain_homealloction_personName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="胡歌"
+                    android:textColor="@color/heise" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="为您分配"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <com.cnpc.zhibo.app.view.DashedLine
+                android:id="@+id/item_maintainhome_alloction_Line_dashedLine1"
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.cnpc.zhibo.app.view.Myroundcacheimageview
+                    android:id="@+id/item_maintainhome_alloction_leftimage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="6dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/iconfont_jiayouzhan" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/item_maintainhome_alloction_leftimage"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/item_maintainhome_alloction_leftimage"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="名称:"
+                            android:textColor="@color/heise" />
+
+                        <TextView
+                            android:id="@+id/textView_item_maintainhome_alloction_gasStationName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="月坛加油站"
+                            android:textColor="@color/heise" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/item_maintainhome_alloction_leftimage"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="问题:"
+                            android:textColor="@color/heise" />
+
+                        <TextView
+                            android:id="@+id/textView_item_maintainhome_alloction_problem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:singleLine="true"
+                            android:text="加油机不出油"
+                            android:textColor="@color/heise" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/item_maintainhome_alloction_leftimage"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="时间:"
+                            android:textColor="@color/heise" />
+
+                        <TextView
+                            android:id="@+id/textView_item_maintainhome_alloction_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="2016.02.16 18：00"
+                            android:textColor="@color/heise" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.cnpc.zhibo.app.view.DashedLine
+                android:id="@+id/item_maintainhome_alloction_footer_Line_dashedLine2"
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  "
+                 />
+        </LinearLayout>
+
+        <!-- 右侧 -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/item_yuan" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="baise">#ffffff</color>
+    <color name="zitiyanse1">#FBA655</color>
+    <color name="zitiyanse4">#de9797</color>
+    <color name="quanbubeijing">#ffffff</color>
+    <color name="dingbubeijingse">#6699cc</color>
+    <color name="qiandingbubeijingse">#996699cc</color>
+    <color name="blue">#6699cc</color>
+    <color name="zitiyanse_lanse">#00a1ff</color>
+    <color name="commonality_interface">#f4f4f4</color>
+    <color name="commonality_bottom_menu">#eef3f7</color>
+    <color name="huise">#e7e7e7</color>
+    <color name="huisecc">#FFCCCCCC</color>
+    <color name="zitiyanse2">#F05C5C</color>
+    <color name="fengexian">#ededed</color>
+    <color name="hongse">#f05c5c</color>
+    <color name="zitiyanse3">#909090</color>
+    <color name="heise">#000000</color>
+    <color name="tianlanse">#F0FFFF</color>
+    <color name="qianlvse">#00FFFF</color>
+    <color name="nawabai">#FFDEAD</color>
+    <color name="qianhuise">#f0f0f0</color>
+    <color name="home_fgx">#d6d7dc</color>
+    <color name="zitiyanse5">#a5a5a5</color>
+	<color name="color_of_progress">#64DA04</color>
+	<color name="color_of_wait">#DA3C04</color>
+	<color name="item_line">#EDEDED</color>
+</resources>

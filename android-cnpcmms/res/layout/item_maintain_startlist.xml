@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp" >
+    
+    <FrameLayout 
+        android:id="@+id/item_maintain_startList_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp"
+        	android:orientation="horizontal"
+            >
+            <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFCCCCCC" />
+		  
+		 <TextView 
+		     android:id="@+id/item_maintain_startList_dateTextView"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="最近一周维修单"
+		     android:layout_margin="10dp"
+		     android:layout_gravity="center"
+		     android:textColor="#ffCCCCCC"
+		     />
+            <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFCCCCCC" />
+        </LinearLayout>
+		  
+    </FrameLayout>
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/huise_shape"
+	    android:orientation="vertical"
+	    android:padding="2dp" >
+
+    <!-- 维修订单 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维修订单："
+            android:textColor="#ff000000"
+             />
+        <TextView
+            android:id="@+id/textView_item_maintain_startlist_indentNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123456789"
+            android:textColor="#ff000000"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             />
+        
+        <TextView
+            android:id="@+id/textView_item_maintain_startlist_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已完成"
+            android:textColor="#ffff0000"
+             />
+
+        </LinearLayout>
+        
+    	<View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC" />
+    	
+    	<RelativeLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    >
+        
+    	    <ImageView 
+    	        android:id="@+id/item_maintain_leftimage"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:src="@drawable/ic_launcher"
+    	        android:layout_alignParentLeft="true"
+    	        android:layout_margin="10dp"
+    	        android:layout_centerVertical="true"
+    	        />
+    	    
+    	    <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentRight="true"
+    	        android:layout_toRightOf="@+id/item_maintain_leftimage"
+    	        android:orientation="vertical" >
+    	        
+    	        <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentTop="true"
+    	        android:orientation="horizontal"
+    	        android:layout_marginTop="3dp"
+    	        android:layout_marginBottom="3dp"
+    	        android:layout_toRightOf="@+id/item_maintain_leftimage" >
+
+    	        <TextView
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:text="名称:"
+    	            android:textColor="#FFCCCCCC" />
+
+    	        <TextView
+    	            android:id="@+id/textView_item_maintain_startlist_name"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:layout_marginLeft="10dp"
+    	            android:text="月坛加油站"
+    	            android:textColor="#FFCCCCCC" />
+
+    	    </LinearLayout>
+    	    
+    	        
+    	        <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentTop="true"
+    	        android:orientation="horizontal"
+    	        android:layout_marginTop="3dp"
+    	        android:layout_marginBottom="3dp"
+    	        android:layout_toRightOf="@+id/item_maintain_leftimage" >
+    	        <TextView
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:text="问题:"
+    	            android:textColor="#FFCCCCCC" />
+    	        <TextView
+    	            android:id="@+id/textView_item_maintain_startlist_problem"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:layout_marginLeft="10dp"
+    	            android:singleLine="true"
+    	            android:text="加油机不出油"
+    	            android:textColor="#FFCCCCCC" />
+    	    </LinearLayout>
+    	    
+    	        
+    	        <LinearLayout
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentTop="true"
+    	        android:orientation="horizontal"
+    	        android:layout_marginTop="3dp"
+    	        android:layout_marginBottom="3dp"
+    	        android:layout_toRightOf="@+id/item_maintain_leftimage" >
+    	        <TextView
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:text="时间:"
+    	            android:textColor="#FFCCCCCC" />
+    	        <TextView
+    	            android:id="@+id/textView_item_maintain_startlist_time"
+    	            android:layout_width="wrap_content"
+    	            android:layout_height="wrap_content"
+    	            android:layout_marginLeft="10dp"
+    	            android:text="2016.02.16 18：00"
+    	            android:textColor="#FFCCCCCC" />
+    	    </LinearLayout>
+    	    
+    	    </LinearLayout>
+
+    	</RelativeLayout>
+    	
+        
+    </LinearLayout>
+
+       
+</LinearLayout>

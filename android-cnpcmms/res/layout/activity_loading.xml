@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:animation="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    tools:context=".LoadingActivity"
+     >
+
+     <com.cnpc.zhibo.app.AnimationView 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         animation:sleep_time="200"
+         />
+
+</RelativeLayout>

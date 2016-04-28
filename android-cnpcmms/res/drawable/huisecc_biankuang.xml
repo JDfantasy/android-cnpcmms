@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- 输入框的背景 -->
+    <solid android:color="#00ff00ff" />
+    <!-- 边框的设置 -->
+    <stroke
+        android:width="1dip"
+        android:color="@color/huisecc" />
+     <!-- 边角的度数 -->
+    <corners android:radius="20dip" />
+
+</shape>

@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/dingbubeijingse"
+    tools:context=".Maintain_apply_DetailActivity" >
+
+     <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_my" />
+     
+     <!-- 最外层布局沉浸式用 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical" >
+	    <WebView 
+	        android:id="@+id/maintain_applyDetail_webview"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        />
+	   
+     <!-- 最外层布局沉浸式用 -->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baise"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/textView_item_supplier_page_approve_item_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/commonality_interface"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="最后一周的公告"
+        android:textColor="@color/zitiyanse5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <FrameLayout
+            android:id="@+id/framelayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView_supplier_notice"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/notice_copy" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingLeft="15dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp" >
+
+                <com.cnpc.zhibo.app.view.BadgeView
+                    android:id="@+id/textview_supplier_unreadcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hongse_shape"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="99+"
+                    android:textColor="@color/baise"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/notice_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="15"
+                android:maxLines="1"
+                android:text="维修人员集体会议维修人员集体会议维修人员集体会议" />
+
+            <TextView
+                android:id="@+id/notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="2016年1月22日下午14:00维修员集体会议！B2会议室"
+                android:textColor="@color/zitiyanse3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/notice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingLeft="2dp"
+                android:paddingRight="10dp"
+                android:text="2016.1.12 12:00"
+                android:textColor="@color/zitiyanse3"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

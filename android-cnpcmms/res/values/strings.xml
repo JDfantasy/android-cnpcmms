@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">库站e点通</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_activity_perfect">MainActivity</string>
+    <string name="title_activity_enterinto">MainActivity</string>
+    <string name="title_activity_maintain_home">MainActivity</string>
+    <string name="title_activity_centre_home">MainActivity</string>
+    <string name="title_activity_supplier_home">MainActivity</string>
+    <string name="title_activity_test">MainActivity</string>
+    <string name="title_activity_address">MainActivity</string>
+    <string name="title_activity_news_verify">MainActivity</string>
+    <string name="title_activity_centre_item">MainActivity</string>
+    <string name="title_activity_centre_item_details">MainActivity</string>
+    <string name="title_activity_grabble">MainActivity</string>
+    <string name="title_activity_centre_see_item">MainActivity</string>
+    <string name="title_activity_maintain_message">MainActivity</string>
+    <string name="title_activity_centre_see_sp_news">MainActivity</string>
+    <string name="title_activity_homess">MainActivity</string>
+    <string name="title_activity_about_us">MainActivity</string>
+    <string name="title_activity_feedback">MainActivity</string>
+    <string name="title_activity_quick_look">MainActivity</string>
+    <string name="title_activity_centre_fragment_grabble_">Centre_fragment_grabble_Activity</string>
+    <string name="title_activity_">Activity</string>
+    <string name="title_activity_centre_itemlist_">Centre_itemlist_Activity</string>
+    <string name="title_activity_centre_lead_wait_itemlist_">Centre_lead_wait_itemlist_Activity</string>
+    <string name="title_activity_centre_see_examine_message">Centre_see_examine_messageActivity</string>
+    <string name="title_activity_petrochina__home">Petrochina_HomeActivity</string>
+    <string name="title_activity_centre_page_maintain">Centre_page_maintainActivity</string>
+    <string name="title_activity_centre_credential_management">Centre_credential_managementActivity</string>
+    <string name="title_activity_centre_credenttial_item">Centre_credenttial_itemActivity</string>
+    <string name="title_activity_centre_credential_itemmessage">Centre_credential_itemmessageActivity</string>
+    <string name="title_activity_petrochina_announce">Petrochina_announceActivity</string>
+    <string name="title_activity_petrochina_examine">Petrochina_examineActivity</string>
+    <string name="title_activity_petrochina_suppliers">Petrochina_suppliersActivity</string>
+    <string name="title_activity_petrochina_station_message">Petrochina_station_messageActivity</string>
+    <string name="title_activity_petrochina_service_number">Petrochina_service_numberActivity</string>
+    <string name="title_activity_petrochina_examine_message">Petrochina_examine_messageActivity</string>
+    <string name="title_activity_petrochina_station_seemessage">Petrochina_station_seemessageActivity</string>
+    <string name="title_activity_supplier_baoxiaoshenpi">Supplier_baoxiaoshenpiActivity</string>
+    <string name="title_activity_supplier_gonggao_seeread">Supplier_gonggao_seereadActivity</string>
+    <string name="title_activity_supplier_addcontacts">Supplier_addcontactsActivity</string>
+    <string name="title_activity_maintain_apply__detail">Maintain_apply_DetailActivity</string>
+    <string name="title_activity_maintain_apply_newlist">Maintain_apply_newlistActivity</string>
+    <string name="title_activity_supplier_select_firm">Supplier_select_firmActivity</string>
+
+    <!-- 下拉刷新 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新…</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+    <!-- 下拉刷新 -->
+
+
+    <!-- 0225下拉刷新加载更多 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- 0225下拉刷新加载更多 -->
+
+    <string name="title_activity_maintain_select_provider">Maintain_select_providerActivity</string>
+    <string name="title_activity_petrochina_see_stationrepairsentry">Petrochina_see_stationrepairsentryActivity</string>
+    <string name="title_activity_petrochina_see_station_repairsmessage">Petrochina_see_station_repairsmessageActivity</string>
+    <string name="title_activity_supplier_search_weixiudan">Supplier_search_weixiudanActivity</string>
+    <string name="title_activity_centre_search_stationentry">Centre_search_stationentryActivity</string>
+    <string name="title_activity_supplier_search_baoxiao">Supplier_search_baoxiaoActivity</string>
+    <string name="title_activity_petrochina_search_serviceentry">Petrochina_search_serviceentryActivity</string>
+    <string name="title_activity_petrochina_search_stationentry">Petrochina_search_stationentryActivity</string>
+    <string name="title_activity_petrochina_servicerate_stationmessage">Petrochina_servicerate_stationmessageActivity</string>
+    <string name="title_activity_petrochina_search_suppliersentry">Petrochina_search_suppliersentryActivity</string>
+    <string name="title_activity_supplier__notice_administration">Supplier_NoticeAdministrationActivity</string>
+    <string name="title_activity_petrochina_sendall">Petrochina_sendallActivity</string>
+    <string name="title_activity_petrochina_seeannounce_message">Petrochina_seeannounce_messageActivity</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_petrochina_project_entry">Petrochina_project_entryActivity</string>
+    <string name="title_activity_petrochina_search_projectentry">Petrochina_search_projectentryActivity</string>
+    <string name="title_activity_noticedetails">NoticedetailsActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_notice_manager">NoticeManagerActivity</string>
+    <string name="title_activity_maintain_apply_modifyapplybill">Maintain_apply_modifyapplybillActivity</string>
+    <string name="title_activity_save_see_phone">Save_see_phoneActivity</string>
+    <string name="title_activity_user_messagectivity">User_messagectivity</string>
+    <string name="title_activity_change__password">Change_PasswordActivity</string>
+    <string name="title_activity_centre__function__introduce">Centre_Function_IntroduceActivity</string>
+    <string name="title_activity_supplier__function__introduce">Supplier_Function_IntroduceActivity</string>
+    <string name="title_activity_maintain_function_introduce">Maintain_function_introduceActivity</string>
+    <string name="title_activity_petrochina_function_introduce">Petrochina_function_introduceActivity</string>
+    <string name="title_activity_maintain_functiondetails">Maintain_functiondetailsActivity</string>
+    <string name="title_activity_centre__see__function_introduce">Centre_See_Function_introduceActivity</string>
+    <string name="title_activity_ptrochina__see_function_introduce">Ptrochina_See_function_introduceActivity</string>
+    <string name="title_activity_supplier__see__function_introduce">Supplier_See_Function_introduceActivity</string>
+    <string name="title_activity_centre_credential_addcredential">Centre_credential_addcredentialActivity</string>
+
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonality_interface"
+    
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baise"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="4dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/textView_item_station_seerepairsitem_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:text="维修订单: 123456789" />
+
+            <TextView
+                android:id="@+id/textView_item_station_seerepairsitem_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView_item_station_seerepairsitem_number"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="2016-02-12 10:20"
+                android:textColor="@color/hongse" />
+
+            <View
+                android:id="@+id/view122"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textView_item_station_seerepairsitem_number"
+                android:background="@color/baise" />
+
+            <View
+                android:id="@+id/view255"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/view122"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/baise" />
+
+            <RelativeLayout
+                android:id="@+id/re1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view122"
+                android:layout_below="@+id/view255" >
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal" >
+
+                    <com.cnpc.zhibo.app.view.Myroundcacheimageview
+                        android:id="@+id/imageview_item_station_seerepairsitem_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iconfont_jiayouzhan" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/relativelayout2"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="名称:"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="3dp"
+                        android:text="问题:"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginTop="3dp"
+                        android:text="花销:"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView_item_station_seerepairsitem_jyzname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text="紫竹加油站加油站"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView_item_station_seerepairsitem_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView2"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:layout_alignLeft="@+id/textView_item_station_seerepairsitem_jyzname"
+                        android:text="加油机  不出油"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView_item_station_seerepairsitem_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView6"
+                        android:layout_alignBottom="@+id/textView6"
+                        android:layout_alignLeft="@+id/textView_item_station_seerepairsitem_title"
+                        android:text="200元"
+                        android:textColor="@color/zitiyanse3" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/fengexian" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_item_station_seerepairsitem_title"
+            android:layout_below="@+id/textView_item_station_seerepairsitem_title"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/textView_item_station_seerepairsitem_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="通过审批"
+                android:textColor="@color/zitiyanse3"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_item_station_seerepairsitem_costtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="2016-02-08"
+                android:textColor="@color/zitiyanse3"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

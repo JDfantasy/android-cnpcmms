@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include layout="@layout/activity_my" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView_petrochina_project_entry_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/search" />
+
+        <com.azy.app.news.view.pullrefresh.PullToRefreshListView
+            android:id="@+id/listView_petrochina_project_entry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.azy.app.news.view.pullrefresh.PullToRefreshListView>
+    </LinearLayout>
+
+</LinearLayout>

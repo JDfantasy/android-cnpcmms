@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 站长端选中的要保修的gridview的行布局 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/textView_item_select_repairsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView_item_select_repairsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView_item_select_repairsname"
+            android:layout_toRightOf="@+id/textView_item_select_repairsname"
+            android:src="@drawable/finishi" />
+    </RelativeLayout>
+
+</LinearLayout>

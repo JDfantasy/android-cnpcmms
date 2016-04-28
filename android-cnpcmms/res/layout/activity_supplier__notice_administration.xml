@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cnpc.zhibo.app.Supplier_NoticeAdministrationActivity" >
+
+    <include layout="@layout/activity_my" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/hongse"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textview_supplier_notielist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="公告列表"
+            android:textColor="@color/baise" />
+
+        <TextView
+            android:id="@+id/textview_supplier_noticesended"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="已发送公告"
+            android:textColor="@color/baise" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/baise"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- <ImageView
+            android:id="@+id/imageView_supplier_notice_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/searchbutton" /> -->
+
+        <!-- <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp" /> -->
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/fengexian"
+            android:visibility="gone" />
+
+        <com.azy.app.news.view.pullrefresh.PullToRefreshListView
+            android:id="@+id/listView_supplier_gonggaoguanli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.azy.app.news.view.pullrefresh.PullToRefreshListView>
+    </LinearLayout>
+
+</LinearLayout>

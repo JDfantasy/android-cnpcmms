@@ -1,0 +1,822 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/dingbubeijingse"
+    tools:context=".Maintain_home_service_addnewlistActivity" >
+
+    <!-- 标题 -->
+    <include
+        android:id="@+id/maintainhome_servicedetail_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_my" />
+    
+    
+     <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+			<!-- 全部 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/baise"
+                >
+    <!-- 维修单提交信息 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        >
+        <!-- 基本信息  -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基本信息"
+                android:textColor="@color/heise"
+                android:layout_marginBottom="2dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/huise_shape"
+                android:padding="10dp"
+                >
+                <LinearLayout 
+                    android:id="@+id/maintainhome_service_linearLayout01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="报 修 单 号："
+                        android:textSize="12sp"
+                        />
+                    <View 
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/huise"
+                        />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加油站名称："
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <View 
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/huise"
+                        />
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加油站地址："
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <View 
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/huise"
+                        />
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/maintainhome_service_linearLayout01"
+                    >
+                    <TextView 
+                        android:id="@+id/maintainhome_servicedetail_indentNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123456789"
+                        android:textSize="12sp"
+                        />
+                    <View 
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/huise"
+                        />
+                    <TextView 
+                        android:id="@+id/maintainhome_servicedetail_gasstationName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="月坛加油站"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <View 
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/huise"
+                        />
+                    <TextView 
+                        android:id="@+id/maintainhome_servicedetail_gasstationAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="月坛路2号"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <View 
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/huise"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- 故障现场  -->
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="故障信息"
+                android:textColor="@color/heise"
+                android:layout_marginBottom="2dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/huise_shape"
+                android:padding="10dp"
+                >
+                <LinearLayout 
+                    android:id="@+id/maintainhome_service_mault_linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_alignParentLeft="true"
+                    >
+                    <TextView 
+                        android:id="@+id/maintainhome_servicedetail_faultInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:text="加 油 机："
+                        android:textSize="12sp"
+                        />
+                    <View 
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/huise"
+                        />
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/maintainhome_service_mault_linearLayout"
+                    >
+                    <RelativeLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                       <TextView 
+                        android:id="@+id/maintainhome_servicedetail_faultproblem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:singleLine="true"
+                        android:text="不出油"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        /> 
+                        <ToggleButton 
+				            android:id="@+id/maintainhome_service_addnewlist_toggleguaranteing"
+				            android:layout_width="40dp"
+				            android:layout_height="20dp"
+				            android:layout_centerVertical="true"
+				            android:background="@drawable/check_switch"
+				            android:layout_alignParentRight="true"
+				            android:checked="true"
+				            android:textSize="12sp"
+				            android:textOn="在保"
+				            android:textOff="过保"/>
+                    </RelativeLayout>
+                    
+                    <ToggleButton 
+				            android:id="@+id/maintainhome_service_addnewlist_toggleismanmade"
+				            android:layout_width="wrap_content"
+				            android:layout_height="20dp"
+				            android:layout_centerVertical="true"
+				            android:background="@drawable/check_switch"
+				            android:layout_gravity="right"
+				            android:layout_marginTop="10dp"
+				            android:checked="false"
+				            android:textSize="12sp"
+				            android:textOn="人为损坏"
+				            android:textOff="非人为损坏"/>
+                    
+                    
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 故障信息  -->
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="故障现场"
+                android:textColor="@color/heise"
+                android:layout_marginBottom="2dp"
+                />
+            <GridView
+                android:id="@+id/maintainhome_service_newaddlist_gridView"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="75dp"
+                android:layout_marginBottom="10dp"
+                android:listSelector="@android:color/transparent"
+                android:background="@null"
+                android:padding="5dp"
+                android:numColumns="4" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 故障现场  -->
+    
+     <!-- 配件信息 -->
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="配件信息"
+                android:textColor="@color/heise"
+                android:layout_marginBottom="2dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/huise_shape"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+                <!-- 标题 -->
+                <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:focusable="true" 
+       				android:focusableInTouchMode="true" 
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            <TextView
+		                android:layout_width="0dp"
+		                android:layout_weight="3"
+		                android:layout_height="match_parent"
+		                android:gravity="center_vertical"
+		                android:textSize="@dimen/ediziti12sp"
+		                android:text="配件名称" />
+
+		            <TextView
+		                android:layout_width="0dp"
+		                android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:gravity="center_vertical"
+		                android:text="单价"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <TextView
+		                android:layout_width="0dp"
+		                android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:gravity="center_vertical"
+		                android:text="数量"
+		                android:textSize="@dimen/ediziti12sp" />
+
+		            <TextView
+		                android:layout_width="0dp"
+		                android:layout_weight="1.5"
+		                android:layout_height="match_parent"
+		                android:gravity="center_vertical"
+		                android:textSize="@dimen/ediziti12sp"
+		                android:text="总价" />
+		        </LinearLayout>
+                <!-- 备填项 -->
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:focusable="true" 
+       				android:focusableInTouchMode="true" 
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianName01"
+		                android:layout_width="0dp"
+		                android:layout_weight="3"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="请输入配件名称"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianOnePrice01"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="numberDecimal"
+		                android:hint="单价"
+		                android:maxLength="6"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianNumber01"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="number"
+		                android:hint="数量"
+		                android:maxLength="3"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <TextView
+		                android:id="@+id/maintainhome_service_edittext_peijianPrice01"
+		                android:layout_width="0dp"
+		                android:layout_weight="1.5"
+		                android:gravity="center_vertical"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="总价"
+		                android:textSize="@dimen/ediziti12sp" />
+		        </LinearLayout>
+		         <!-- 备填项 -->
+                <!-- 备填项 -->
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:focusable="true" 
+       				android:focusableInTouchMode="true" 
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianName02"
+		                android:layout_width="0dp"
+		                android:layout_weight="3"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="请输入配件名称"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianOnePrice02"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="numberDecimal"
+		                android:hint="单价"
+		                android:maxLength="6"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianNumber02"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="number"
+		                android:hint="数量"
+		                android:maxLength="3"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <TextView
+		                android:id="@+id/maintainhome_service_edittext_peijianPrice02"
+		                android:layout_width="0dp"
+		                android:layout_weight="1.5"
+		                android:gravity="center_vertical"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="总价"
+		                android:textSize="@dimen/ediziti12sp" />
+		        </LinearLayout>
+		         <!-- 备填项 -->
+                <!-- 备填项 -->
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:focusable="true" 
+       				android:focusableInTouchMode="true" 
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianName03"
+		                android:layout_width="0dp"
+		                android:layout_weight="3"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="请输入配件名称"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianOnePrice03"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="numberDecimal"
+		                android:hint="单价"
+		                android:maxLength="6"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianNumber03"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="number"
+		                android:hint="数量"
+		                android:maxLength="3"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <TextView
+		                android:id="@+id/maintainhome_service_edittext_peijianPrice03"
+		                android:layout_width="0dp"
+		                android:layout_weight="1.5"
+		                android:gravity="center_vertical"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="总价"
+		                android:textSize="@dimen/ediziti12sp" />
+		        </LinearLayout>
+		         <!-- 备填项 -->
+                <!-- 备填项 -->
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:focusable="true" 
+       				android:focusableInTouchMode="true" 
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianName04"
+		                android:layout_width="0dp"
+		                android:layout_weight="3"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="请输入配件名称"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianOnePrice04"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="numberDecimal"
+		                android:hint="单价"
+		                android:maxLength="6"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianNumber04"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="number"
+		                android:hint="数量"
+		                android:maxLength="3"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <TextView
+		                android:id="@+id/maintainhome_service_edittext_peijianPrice04"
+		                android:layout_width="0dp"
+		                android:layout_weight="1.5"
+		                android:gravity="center_vertical"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="总价"
+		                android:textSize="@dimen/ediziti12sp" />
+		        </LinearLayout>
+		         <!-- 备填项 -->
+                <!-- 备填项 -->
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:focusable="true" 
+       				android:focusableInTouchMode="true" 
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianName05"
+		                android:layout_width="0dp"
+		                android:layout_weight="3"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="请输入配件名称"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianOnePrice05"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="numberDecimal"
+		                android:hint="单价"
+		                android:maxLength="6"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_edittext_peijianNumber05"
+		                android:layout_width="0dp"
+		                android:layout_weight="1"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="number"
+		                android:hint="数量"
+		                android:maxLength="3"
+		                android:textSize="@dimen/ediziti12sp" />
+		            <TextView
+		                android:id="@+id/maintainhome_service_edittext_peijianPrice05"
+		                android:layout_width="0dp"
+		                android:layout_weight="1.5"
+		                android:gravity="center_vertical"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="总价"
+		                android:textSize="@dimen/ediziti12sp" />
+		        </LinearLayout>
+		         <!-- 备填项 -->
+                <!-- 备填项合计 -->
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:focusable="true" 
+       				android:focusableInTouchMode="true" 
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            
+		            <TextView
+		                android:layout_width="0dp"
+		                android:layout_height="match_parent"
+		                android:layout_weight="1"
+		                android:background="@null"
+		                />
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center_vertical"
+		                android:textSize="@dimen/ediziti12sp"
+		                android:text="合计：" />
+
+		            <TextView
+		                android:id="@+id/maintainhome_service_edittext_totalMoney"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="right|center_vertical"
+		                android:hint="0.0"
+		                android:textSize="@dimen/ediziti12sp" />
+
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center_vertical"
+		                android:layout_marginLeft="3dp"
+		                android:textSize="@dimen/ediziti12sp"
+		                android:text="元" />
+		        </LinearLayout>
+		         <!-- 备填项合计 -->
+		        
+		        
+		        
+            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- 维修费用维修时间 -->
+        
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/huise_shape"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"
+                >
+            	<!-- 服务费用  -->
+		        <!-- <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center_vertical"
+		                android:textSize="@dimen/ediziti12sp"
+		                android:text="服务费用：" />
+		            <EditText
+		                android:id="@+id/maintainhome_service_adddnewlist_servicemoney"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:hint="如需收取服务费请在此处填写"
+		                android:inputType="number"
+		                android:maxLength="4"
+		                android:textSize="@dimen/ediziti12sp" />
+		        </LinearLayout> -->
+		        
+		        <!-- 预计时间 -->
+		        <!-- <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="30dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:gravity="center_vertical"
+		                android:textSize="@dimen/ediziti12sp"
+		                android:text="预计时间：" />
+		            <LinearLayout 
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                >
+		                <EditText
+		                android:id="@+id/maintainhome_service_adddnewlist_servicedays"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="number"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="5dp"
+		                android:hint="天数"
+		                android:textSize="@dimen/ediziti12sp" />
+		                <TextView 
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="天"
+		                    android:layout_marginLeft="5dp"
+		                    android:layout_marginRight="5dp"
+		                    android:textSize="@dimen/ediziti12sp"
+		                    />
+		                <EditText
+		                android:id="@+id/maintainhome_service_adddnewlist_servicehours"
+		                android:layout_width="wrap_content"
+		                android:layout_height="match_parent"
+		                android:background="@null"
+		                android:inputType="number"
+		                android:layout_marginLeft="5dp"
+		                android:layout_marginRight="5dp"
+		                android:hint="时间"
+		                android:textSize="@dimen/ediziti12sp" />
+		                <TextView 
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="小时"
+		                    android:layout_marginLeft="5dp"
+		                    android:layout_marginRight="5dp"
+		                    android:textSize="@dimen/ediziti12sp"
+		                    />
+		            </LinearLayout>
+		        </LinearLayout> -->
+		        
+		        <!-- 备注 -->
+            	<LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="60dp"
+		            android:background="@drawable/huise_biankuang"
+		            android:orientation="horizontal"
+		            android:layout_marginTop="10dp"
+		            android:paddingBottom="2dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:paddingTop="2dp" >
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:gravity="center_vertical"
+		                android:textSize="@dimen/ediziti12sp"
+		                android:text="备注：" />
+			            <EditText
+		                android:id="@+id/maintainhome_service_adddnewlist_servicetime_remarksInfo"
+		                android:layout_width="0dp"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:background="@null"
+		                android:hint="请输入备注信息..."
+		                android:textSize="@dimen/ediziti12sp"
+		                android:minLines="1"
+		                android:maxLines="3"
+		                />
+		        </LinearLayout>
+            	<!-- 备注 -->
+            </LinearLayout>
+        
+        
+    </LinearLayout>
+    
+    
+    
+    <Button
+        android:id="@+id/maintainhome_servicenewlsit_send"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:text="发   送"
+        android:textColor="@drawable/item_maintain_selector_buttontextcolor"
+    	android:background="@drawable/item_maintain_selector_button"
+        />
+    
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

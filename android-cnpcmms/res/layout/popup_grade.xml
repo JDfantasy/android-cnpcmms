@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 对订单进行评分的界面 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/baise_shape"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:text="维修服务评价"
+                android:textColor="@color/blue" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="满意请给五星哦"
+                android:textColor="@color/zitiyanse5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:text="维修速度满意度：" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_popup_grade_grade1"
+                style="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/huise"
+                android:progressTint="@color/hongse"
+                android:rating="1"
+                android:stepSize="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:text="维修服务满意度：" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_popup_grade_grade2"
+                style="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/huise"
+                android:progressTint="@color/hongse"
+                android:rating="1"
+                android:stepSize="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:text="维修质量满意度：" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_popup_grade_grade3"
+                style="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressBackgroundTint="@color/huise"
+                android:progressTint="@color/hongse"
+                android:rating="1"
+                android:stepSize="1" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText_popup_grade_message"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/huise_biankuang"
+            android:backgroundTint="@color/zitiyanse5"
+            android:gravity="left"
+            android:hint="请输入你的意见"
+            android:padding="10dp"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/textView_popup_grade_verify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/item_maintain_selector_button"
+                android:padding="6dp"
+                android:text="发表评价"
+                android:textColor="@drawable/item_maintain_selector_buttontextcolor" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

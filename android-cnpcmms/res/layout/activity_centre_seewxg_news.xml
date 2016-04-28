@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".Centre_see_noticeentryActivity" >
+
+    <include layout="@layout/activity_my" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical" >
+
+        <com.azy.app.news.view.pullrefresh.PullToRefreshListView
+            android:id="@+id/listView_centre_see_serviceentry_news_entry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.azy.app.news.view.pullrefresh.PullToRefreshListView>
+
+    </LinearLayout>
+
+</LinearLayout>

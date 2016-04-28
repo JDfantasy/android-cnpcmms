@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Centre_AddressActivity" >
+
+    <include layout="@layout/activity_my" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/quanbubeijing"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/imageView_centre_address_seek"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/searchbutton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/baise"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="请选择省："
+                android:textColor="@color/zitiyanse1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textview_address_shi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="请选择市："
+                        android:textColor="@color/zitiyanse1"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/textview_address_qu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="请选择区："
+                        android:textColor="@color/zitiyanse1"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_address_jiayouzhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="请选择加油站："
+                    android:textColor="@color/zitiyanse1"
+                    android:visibility="invisible" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/fengexian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/baise"
+            android:orientation="horizontal" >
+
+            <!-- 省 -->
+
+            <ListView
+                android:id="@+id/listView_address_sheng"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/qianhuise"
+                android:divider="#FFCC00"
+                android:fastScrollEnabled="false"
+                android:scrollbars="none" >
+            </ListView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/baise" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <!-- 市 -->
+
+                    <ListView
+                        android:id="@+id/listView_address_shi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/baise"
+                        android:divider="#FFCC00"
+                        android:fastScrollEnabled="false"
+                        android:scrollbars="none"
+                        android:visibility="invisible" >
+                    </ListView>
+
+                    <!-- 区 -->
+
+                    <ListView
+                        android:id="@+id/listView_address_qu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/qianhuise"
+                        android:divider="#FFCC00"
+                        android:fastScrollEnabled="false"
+                        android:scrollbars="none"
+                        android:visibility="invisible" >
+                    </ListView>
+                </LinearLayout>
+                <!-- 加油站的信息 -->
+
+                <GridView
+                    android:id="@+id/gridView_address_jiayouzhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/baise"
+                    android:numColumns="2"
+                    android:visibility="gone" >
+                </GridView>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

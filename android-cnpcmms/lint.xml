@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="JavascriptInterface">
+        <ignore path="src/com/cnpc/zhibo/app/Supplier_fenpeixiangqingActivity.java" />
+    </issue>
+</lint>

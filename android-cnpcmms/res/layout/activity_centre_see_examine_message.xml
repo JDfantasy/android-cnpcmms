@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Centre_see_examine_messageActivity" >
+
+    <include layout="@layout/activity_my" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_centre_see_examine_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/textView_centre_see_examine_message_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="月坛加油站维修单批示信息"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_centre_see_examine_message_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/hongse_shape"
+                android:padding="4dp"
+                android:text="已审批"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/home_fgx" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView_centre_see_examine_message_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="批示人：张工"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_centre_see_examine_message_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="职位：后勤主管"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_centre_see_examine_message_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="电话：010-12345678"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView_centre_see_examine_message_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="手机：123456789"
+            android:textSize="12sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/home_fgx" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="4dp"
+            android:text="批示信息："
+            android:textSize="12sp" />
+          <TextView
+            android:id="@+id/textView_centre_see_examine_message_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="      站长监督抓紧时间维修，坚决贯彻落实中国石油维修安全条例进行维修"
+            android:textSize="12sp" />
+        
+    </LinearLayout>
+
+</LinearLayout>

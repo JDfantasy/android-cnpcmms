@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustPan" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/baise"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textview_fragment_centre_repairs_zzwx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="维修中" />
+
+        <TextView
+            android:id="@+id/textview_fragment_centre_repairs_lswx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="历史维修" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical"
+        android:windowSoftInputMode="adjustPan" >
+
+        <ImageView
+            android:id="@+id/imageView_fragment_centre_repairs_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/search" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/fengexian" />
+
+        <com.azy.app.news.view.pullrefresh.PullToRefreshListView
+            android:id="@+id/listView_fragment_repairs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/commonality_interface"
+            android:transcriptMode="normal" >
+        </com.azy.app.news.view.pullrefresh.PullToRefreshListView>
+    </LinearLayout>
+
+</LinearLayout>

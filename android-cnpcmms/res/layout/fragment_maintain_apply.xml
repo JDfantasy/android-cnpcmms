@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/commonality_interface"
+    android:windowSoftInputMode="adjustPan" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/baise"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textview_fragment_maintain_notapply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="未报销"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/textview_fragment_maintain_alreadapply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="已报销"
+            android:textColor="@color/zitiyanse5" />
+    </LinearLayout>
+    
+		
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical"
+         >
+    
+	    <ImageView
+	            android:id="@+id/maintainApply_fragment_apply_search"
+	            android:layout_width="match_parent"
+	            android:layout_height="30dp"
+	            android:scaleType="fitXY"
+	            android:layout_marginTop="5dp"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"
+	            android:src="@drawable/search" />
+	    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+            android:background="@color/fengexian" />
+        
+    	<com.azy.app.news.view.pullrefresh.PullToRefreshListView
+            android:id="@+id/maintainApply_fragment_applyListview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:listSelector="@android:color/transparent"
+        	android:cacheColorHint="#00000000"
+       		android:divider="@null"
+        	android:background="@null"
+            android:transcriptMode="normal" >
+        </com.azy.app.news.view.pullrefresh.PullToRefreshListView>
+        
+    </LinearLayout>
+		
+        
+
+</LinearLayout>

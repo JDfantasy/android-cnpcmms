@@ -1,0 +1,293 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Petrochina_HomeActivity" >
+
+    <include layout="@layout/activity_my" />
+    <!-- 广告部分 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/baise"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- 第一行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_petrochina_hone_pushnotice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                    <ImageView
+                        android:id="@+id/imageView_fragment_centre_woyaobaoxiu"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/view1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="1dp"
+                        android:src="@drawable/petrochina_notice" />
+
+                    <TextView
+                        android:id="@+id/textView_fragment_centre_woyaobaoxiu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:text="公告管理" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:id="@+id/relativelayout_petrochina_hone_examine"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <View
+                            android:id="@+id/view1ew"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" />
+
+                        <ImageView
+                            android:id="@+id/imageView_fragment_centre_shenpiguanli"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_above="@+id/view1ew"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="1dp"
+                            android:src="@drawable/petrochina_shenpi" />
+
+                        <TextView
+                            android:id="@+id/textView_fragment_centre_shenpiguanli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/view1ew"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1dp"
+                            android:text="审批" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:padding="20dp" >
+
+                        <TextView
+                            android:id="@+id/textview_petrochina_hone_examine_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/hongse_shape"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="2dp"
+                            android:paddingRight="2dp"
+                            android:text="1"
+                            android:textColor="@color/baise"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_petrochina_hone_suppliermessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:id="@+id/view1we"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/view1we"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="1dp"
+                        android:src="@drawable/petrochina_suppliermessage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view1we"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:text="供应商信息" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 第二行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_petrochina_hone_jyzrmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:id="@+id/view1ww"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/view1ww"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="1dp"
+                        android:src="@drawable/petrochina_station" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view1ww"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:text="加油站信息" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_petrochina_hone_servicenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:id="@+id/view1ee"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/view1ee"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="1dp"
+                        android:src="@drawable/petrochina_weixiulv" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view1ee"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:text="维修率查询" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                android:id="@+id/relativelayout_petrochina_home_aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <View
+                    android:id="@+id/view11gywm"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/imageView_fragment_centre_gunayuwomen"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_above="@+id/view11gywm"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="1dp"
+                    android:src="@drawable/guanyuwomen" />
+
+                <TextView
+                    android:id="@+id/textView_fragment_centre_guanyuwomen2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view11gywm"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:text="关于我们" />
+            </RelativeLayout>
+            </LinearLayout>
+            <!-- 第三行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

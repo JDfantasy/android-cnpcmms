@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/dingbubeijingse"
+    android:orientation="vertical"
+    tools:context=".Maintain_searchapplylist_Activity" >
+    
+    <include
+        android:id="@+id/include01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_my" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface" >
+        
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/commonality_interface"
+             >
+
+            <!-- 搜索框的部分 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_height="40dp" >
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/baise_shape"
+                     >
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/magnifyingglass" />
+
+                    <EditText
+                        android:id="@+id/maintain_searchapplylist_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="@null"
+                        android:hint="搜索"
+                        android:textColorHint="@color/zitiyanse3"
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        >
+                        <requestFocus />
+                    </EditText>
+
+                </LinearLayout>
+                 <TextView
+                      android:id="@+id/maintain_searchapplylist_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:textColor="@color/zitiyanse4"
+                        android:layout_margin="6dp"
+                        android:text="搜索" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/maintain_searchapplylist_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:listSelector="@android:color/transparent"
+	        	android:cacheColorHint="#00000000"
+	       		android:divider="@null"
+	        	android:background="@null"
+                >
+            </ListView>
+
+        </LinearLayout>
+        
+        <TextView
+                android:id="@+id/maintain_searchapplylist_repairsenty_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_centerInParent="true"
+                android:text="搜索报销单列表"
+                android:textColor="@color/zitiyanse3" />
+    </RelativeLayout>
+    
+
+</LinearLayout>

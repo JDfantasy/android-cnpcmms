@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Supplier_gonggaoActivity" >
+
+    <include layout="@layout/activity_my" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!--
+        <LinearLayout
+            android:id="@+id/linearlayout_fragment_supplier_repairs"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/qianhuise_shape"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="请输入维修单号或报修单号"
+                android:textColor="@color/fengexian" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="0"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kuaisuchazhao" />
+        </LinearLayout>
+        -->
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/fengexian"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listView_gonggao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

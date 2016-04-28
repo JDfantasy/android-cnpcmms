@@ -1,0 +1,260 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Maintain_HomeActivity" >
+
+    <!-- 最外层布局沉浸式用 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical" >
+
+        <include layout="@layout/activity_my" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout_centre_home_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/quanbubeijing"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight="0"
+            android:background="@color/commonality_bottom_menu"
+            android:orientation="vertical" >
+
+            <!-- 分隔线 -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/fengexian" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_weight="0"
+                android:background="@color/commonality_bottom_menu"
+                android:orientation="horizontal" >
+
+                <!-- 首页 -->
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <!-- 底层的按钮 -->
+
+
+                    <!-- 后加 -->
+
+                    <RelativeLayout
+                        android:id="@+id/relativelayout_maintain_home_shouye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center" >
+
+                        <!-- 后加 -->
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_maintain_home_shouye"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="8dp" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:id="@+id/imageView_maintain_home_shouye"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/maintain_home_seletor" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/maintain_hometext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:paddingTop="2dp"
+                                    android:text="首页"
+                                    android:textColor="@color/baise"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!-- 后加 -->
+                    </RelativeLayout>
+                    <!-- 后加 -->
+                </FrameLayout>
+
+                <!-- 维修 -->
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <!-- 底层的按钮 -->
+
+
+                    <!-- 后加 -->
+
+                    <RelativeLayout
+                        android:id="@+id/relativelayout_maintain_home_weixiu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center" >
+
+                        <!-- 后加 -->
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_maintain_home_weixiu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="8dp" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:id="@+id/imageView_maintain_home_weixiu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/maintain_servicehui" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/maintain_servicetext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:paddingTop="2dp"
+                                    android:text="维修"
+                                    android:textColor="@color/baise"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!-- 后加 -->
+                    </RelativeLayout>
+                    <!-- 后加 -->
+                </FrameLayout>
+
+                <!-- 报销 -->
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <!-- 底层的按钮 -->
+
+
+                    <!-- 后加 -->
+
+                    <RelativeLayout
+                        android:id="@+id/relativelayout_maintain_home_baoxiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center" >
+
+                        <!-- 后加 -->
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_maintain_home_baoxiao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="8dp" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <ImageView
+                                    android:id="@+id/imageView_maintain_home_baoxiao"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/maintain_applyhui" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" >
+
+                                <TextView
+                                    android:id="@+id/maintain_applytext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:paddingTop="2dp"
+                                    android:text="报销"
+                                    android:textColor="@color/baise"
+                                    android:textSize="10sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!-- 后加 -->
+                    </RelativeLayout>
+                    <!-- 后加 -->
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 最外层沉浸式用结 -->
+    </LinearLayout>
+
+</LinearLayout>

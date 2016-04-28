@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp" >
+
+    <TextView
+        android:id="@+id/textView_item_petrochina_examine_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="最后一周的维修单"
+        android:textColor="@color/zitiyanse5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baise"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/textview_item_petrochina_examine_message_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:text="维修订单: 123456789" />
+
+            <TextView
+                android:id="@+id/textview_item_petrochina_examine_message_statetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textview_item_petrochina_examine_message_number"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="2016-02-12 10:20"
+                android:textColor="@color/hongse" />
+
+            <View
+                android:id="@+id/view122"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textview_item_petrochina_examine_message_number"
+                android:background="@color/baise" />
+
+            <View
+                android:id="@+id/view255"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/view122"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/baise" />
+
+            <RelativeLayout
+                android:id="@+id/re1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view122"
+                android:layout_below="@+id/view255" >
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal" >
+
+                    <com.cnpc.zhibo.app.view.Myroundcacheimageview
+                        android:id="@+id/imageview_item_petrochina_examine_message_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/iconfont_jiayouzhan" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/relativelayout2"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="名称:"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginTop="3dp"
+                        android:text="问题:"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginTop="3dp"
+                        android:text="花销:"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView_item_petrochina_examine_message_jyzname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/textView2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:text="紫竹加油站加油站"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView_item_petrochina_examine_message_malfunction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView2"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:layout_alignLeft="@+id/textView_item_petrochina_examine_message_jyzname"
+                        android:text="加油机  不出油"
+                        android:textColor="@color/zitiyanse3" />
+
+                    <TextView
+                        android:id="@+id/textView_item_petrochina_examine_message_expenditure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/textView6"
+                        android:layout_alignBottom="@+id/textView6"
+                        android:layout_alignLeft="@+id/textView_item_petrochina_examine_message_malfunction"
+                        android:text="200元"
+                        android:textColor="@color/zitiyanse3" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

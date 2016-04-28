@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Centre_ItemDetailsActivity" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_my" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!-- 填写保修项目详情的部分 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="10dp" >
+
+                    <!-- 项目的名称 -->
+
+                    <TextView
+                        android:id="@+id/textview_centre_item_details_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/baise"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="请选择要填写的项目" />
+                    <!-- 分割线 -->
+
+
+                    <!-- 品牌的下拉菜单 -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+                    <!-- 供应商 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/baise"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="选择供应商" />
+
+                        <Spinner
+                            android:id="@+id/spinner_centre_item_details_gongyingsahng"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/huise_shape"
+                            android:overlapAnchor="true"
+                            android:popupBackground="@color/huisecc"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+
+                    <!-- 分割线 -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <!-- 故障描述 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/baise"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:text="故障描述：" />
+                        <!-- 输入框 -->
+
+                        <EditText
+                            android:id="@+id/editText_centre_item_details_miaoshu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/baise"
+                            android:gravity="left"
+                            android:hint="请填写故障描述："
+                            android:inputType="textPostalAddress"
+                            android:textSize="14sp" >
+
+                            <requestFocus
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </EditText>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/huisecc" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <!-- 存放图片的gridview集合 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/baise"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:text="故障描述：" />
+
+                        <GridView
+                            android:id="@+id/gridView_centre_item_details_tupian"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:numColumns="4" >
+                        </GridView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <!-- 备注信息 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/baise"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="备注信息：" />
+
+                    <EditText
+                        android:id="@+id/editText_centre_item_details_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/baise"
+                        android:gravity="left"
+                        android:hint="请输入备注"
+                        android:singleLine="false"
+                        android:textSize="14sp" >
+                    </EditText>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/huisecc" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+   
+
+</LinearLayout>

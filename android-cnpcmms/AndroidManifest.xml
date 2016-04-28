@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cnpc.zhibo.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 环信所需权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".application.SysApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".MyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Phone_verifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".PerfectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".EnterintoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_AddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_NewsVerifyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_select_ItemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_ItemDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_search_itemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_See_repairs_messageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_see_noticeentryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_See_examine_itemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AboutUsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".QuickLookActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_page_examine_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_see_repairs_entryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_lead_wait_itemlist_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_see_examine_messageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_page_maintainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_credential_entryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_dingdanfenpeiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_weixiudanguanliActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_fenpeiguanliActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_weixiuyuanguanliActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_fenpeixiangqingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".ChatActivity" >
+        </activity>
+        <activity
+            android:name=".Supplier_weixiudanxiangqingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_home_service_itemlistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".Maintain_select_org" >
+        </activity>
+        <activity
+            android:name=".Maintain_home_newsNotificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" >
+        </activity>
+        <activity
+            android:name=".Maintain_home_alloction_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_home_alliction_detail_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_home_start_detail_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_home_service_addnewlistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_home_service_detail_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_credential_itemmessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_announceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_examine_entryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_suppliers_entryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_station_entryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_service_numberActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_examine_messageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_station_seemessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_baoxiudanxiangqingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_gonggaoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_sendmessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_baoxiaodanxiangqingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_baoxiaoshenpiActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_gonggao_seereadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_addcontactsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_apply_newapplylistActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_searchapplylist_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_searchhomeservice_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_search_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_apply_DetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_apply_newlistActivity"
+            android:label="@string/title_activity_maintain_apply_newlist"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="jdfantasy#cnpcmms" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+
+        <activity android:name=".Supplier_select_firmActivity" >
+        </activity>
+        <activity android:name=".Maintain_select_providerActivity" >
+        </activity>
+        <activity android:name=".Petrochina_see_stationrepairsentryActivity" >
+        </activity>
+        <activity android:name=".Petrochina_see_station_repairsmessageActivity" >
+        </activity>
+        <activity android:name=".Supplier_search_weixiudanActivity" >
+        </activity>
+        <activity android:name=".Centre_search_serviceentryActivity" >
+        </activity>
+        <activity android:name=".Centre_search_rapairsentryActivity" >
+        </activity>
+        <activity android:name=".Supplier_search_fenpeiActivity" >
+        </activity>
+        <activity
+            android:name=".Centre_search_stationentryActivity"
+            android:label="@string/title_activity_centre_search_stationentry" >
+        </activity>
+        <activity android:name="com.easemob.easeui.ui.EaseShowBigImageActivity" >
+        </activity>
+        <activity
+            android:name=".Supplier_search_baoxiaoActivity"
+            android:label="@string/title_activity_supplier_search_baoxiao"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_search_serviceentryActivity"
+            android:label="@string/title_activity_petrochina_search_serviceentry"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_search_stationentryActivity"
+            android:label="@string/title_activity_petrochina_search_stationentry" >
+        </activity>
+        <activity
+            android:name=".Petrochina_servicerate_stationmessageActivity"
+            android:label="@string/title_activity_petrochina_servicerate_stationmessage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".Petrochina_seesuppliers_message_Activity" >
+        </activity>
+        <activity
+            android:name=".Petrochina_search_suppliersentryActivity"
+            android:label="@string/title_activity_petrochina_search_suppliersentry"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_NoticeAdministrationActivity"
+            android:label="@string/title_activity_supplier__notice_administration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_sendallActivity"
+            android:label="@string/title_activity_petrochina_sendall"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_seeannounce_messageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoadingActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Petrochina_project_entryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_search_projectentryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NoticedetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".NoticeManagerActivity"
+            android:label="@string/title_activity_notice_manager"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_apply_modifyapplybillActivity"
+            android:label="@string/title_activity_maintain_apply_modifyapplybill"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Save_see_phoneActivity"
+            android:label="@string/title_activity_save_see_phone"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".User_messagectivity"
+            android:label="@string/title_activity_user_messagectivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Change_PasswordActivity"
+            android:label="@string/title_activity_change__password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_Function_IntroduceActivity"
+            android:label="@string/title_activity_centre__function__introduce"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_Function_IntroduceActivity"
+            android:label="@string/title_activity_supplier__function__introduce"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_function_introduceActivity"
+            android:label="@string/title_activity_maintain_function_introduce"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_function_introduceActivity"
+            android:label="@string/title_activity_petrochina_function_introduce"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maintain_functiondetailsActivity"
+            android:label="@string/title_activity_maintain_functiondetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Centre_See_Function_introduceActivity"
+            android:label="@string/title_activity_centre__see__function_introduce"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Petrochina_See_function_introduceActivity"
+            android:label="@string/title_activity_ptrochina__see_function_introduce"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Supplier_See_Function_introduceActivity"
+            android:label="@string/title_activity_supplier__see__function_introduce" >
+        </activity>
+        <activity
+            android:name=".Centre_credential_addcredentialActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+             >
+        </activity>
+    </application>
+
+</manifest>

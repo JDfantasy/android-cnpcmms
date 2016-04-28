@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="animation">
+        <attr name="sleep_time" format="float"></attr>
+        <!-- 数组样式引用必须用reference -->
+        <attr name="images" format="reference"></attr>
+    </declare-styleable>
+	<declare-styleable name="Shade">
+        <attr name="text" format="string"></attr>
+        <attr name="text_color" format="color"></attr>
+        <attr name="shade_color" format="color"></attr>
+        <attr name="text_size" format="float"></attr>
+    </declare-styleable>
+</resources>

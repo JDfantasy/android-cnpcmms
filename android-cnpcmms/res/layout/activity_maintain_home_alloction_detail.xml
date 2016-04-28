@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dingbubeijingse"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context=".Maintain_home_alliction_detail_Activity" >
+    
+    <include
+        android:id="@+id/include01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_my" />
+    
+    <!-- 最外层布局沉浸式用 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/commonality_interface"
+        android:orientation="vertical" >
+    
+       <WebView 
+           android:id="@+id/maintainhome_alloctionDetail_webview"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+            android:layout_weight="1"
+           />
+    
+    <!-- 点击后显示的第一层 -->
+    <LinearLayout 
+        android:id="@+id/maintainhome_alloctionDetail_bottommenufirst"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baise"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="bottom"
+        >
+        <Button
+        android:id="@+id/maintain_alloction_phone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="电话"
+        android:textColor="@drawable/item_maintain_selector_buttontextcolor"
+    	android:background="@drawable/item_maintain_selector_button"
+        />
+        <Button
+        android:id="@+id/maintain_alloction_process"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="处理"
+        android:textColor="@drawable/item_maintain_selector_buttontextcolor"
+    	android:background="@drawable/item_maintain_selector_button"
+        />
+        <Button
+        android:id="@+id/maintain_alloction_chat"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="会话"
+        android:textColor="@drawable/item_maintain_selector_buttontextcolor"
+    	android:background="@drawable/item_maintain_selector_button"
+        />
+    </LinearLayout>
+    
+    <!-- 点击后显示的第二层 -->
+    <LinearLayout 
+        android:id="@+id/maintainhome_alloctionDetail_bottommenusecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baise"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        >
+        <Button
+        android:id="@+id/maintain_alloction_finishIndent"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@drawable/item_maintain_selector_buttontextcolor"
+    	android:background="@drawable/item_maintain_selector_button"
+        />
+        <Button
+        android:id="@+id/maintain_alloction_addIndent"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="接单"
+        android:textColor="@drawable/item_maintain_selector_buttontextcolor"
+    	android:background="@drawable/item_maintain_selector_button"
+        />
+        <Button
+        android:id="@+id/maintain_alloction_closeIndent"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="关闭"
+        android:textColor="@drawable/item_maintain_selector_buttontextcolor"
+    	android:background="@drawable/item_maintain_selector_button"
+        />
+    </LinearLayout>
+    
+    <!-- 最外层沉浸式用结 -->
+    </LinearLayout>
+    
+
+</LinearLayout>

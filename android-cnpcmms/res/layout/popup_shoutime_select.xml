@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise" />
+
+    <TextView
+        android:id="@+id/textView_popup_showtime_select_onemonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:text="一个月内"
+        android:textColor="@color/baise" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise" />
+
+    <TextView
+        android:id="@+id/textView_popup_showtime_select_threemonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:text="三个月内"
+        android:textColor="@color/baise" />
+     <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise" />
+
+    <TextView
+        android:id="@+id/textView_popup_showtime_select_sixmonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:text="六个月内"
+        android:textColor="@color/baise" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/baise" />
+
+    <TextView
+        android:id="@+id/textView_popup_showtime_select_oneyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:text="一年以内"
+        android:textColor="@color/baise" />
+
+</LinearLayout>

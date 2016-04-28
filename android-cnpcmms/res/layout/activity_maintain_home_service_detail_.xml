@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Maintain_home_start_detail_Activity" >
+    
+    <include
+        android:id="@+id/include01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/activity_my" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+	        <LinearLayout
+	        android:id="@+id/search_linearLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:orientation="horizontal"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:paddingTop="3dp"
+	        android:paddingBottom="3dp"
+	        >
+	        
+	        <SearchView
+	        android:id="@+id/maintatinhome_serviceDetail_searchView1"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:queryHint="请输入要搜索的内容..."
+	        >
+	    	</SearchView>
+	    	
+	        <Button 
+	            android:id="@+id/maintatinhome_serviceDetail_searchButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:background="@null"
+	            android:text="搜 索"
+	            android:textColor="#ffff0000"
+	            android:onClick="doClick"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginLeft="5dp"
+	            />
+	    	</LinearLayout>
+        
+	         <WebView 
+		        android:id="@+id/maintain_startDetail_webview"
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:layout_weight="1"
+		        />
+    </LinearLayout>
+    
+   
+    
+</LinearLayout>
